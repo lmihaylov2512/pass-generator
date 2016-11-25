@@ -38,7 +38,7 @@ The available configuration options are:
  - brackets: all kind of brackets (, ), {, }, [, ]
  - minus: minus sign -
  - underline: underline sign _
- - space: space character
+ - space: space character ' '
  - length: define password string size (symbols count)
  
 It is allowed to change the characters pattern for specific group type (upperCase, lowerCase, etc) via "Storage" static class.

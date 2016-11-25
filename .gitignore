@@ -28,3 +28,12 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+# npm modules dir
+/node_modules
+
+# bower components dir
+/bower_components
+
+# 
+/demo/browser/assets

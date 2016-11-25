@@ -8,6 +8,7 @@ namespace PassGenerator;
  * @property string $env detected environment
  * 
  * @author Lachezar Mihaylov <me@lacho-portfolio.com>
+ * @license https://github.com/lmihaylov2512/pass-generator/blob/master/LICENSE.md MIT License
  */
 class Detector
 {

@@ -6,6 +6,7 @@ namespace PassGenerator;
  * The storage for all kinds characters and types string mapping.
  * 
  * @author Lachezar Mihaylov <me@lacho-portfolio.com>
+ * @license https://github.com/lmihaylov2512/pass-generator/blob/master/LICENSE.md MIT License
  */
 class Storage
 {

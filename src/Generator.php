@@ -17,8 +17,18 @@ namespace PassGenerator;
  *  - length: password string size
  * 
  * @property string $password the generated password
+ * @property boolean $upperCase
+ * @property boolean $lowerCase
+ * @property boolean $digits
+ * @property boolean $special
+ * @property boolean $brackets
+ * @property boolean $minus
+ * @property boolean $underline
+ * @property boolean $space
+ * @property integer $length
  * 
  * @author Lachezar Mihaylov <me@lacho-portfolio.com>
+ * @license https://github.com/lmihaylov2512/pass-generator/blob/master/LICENSE.md MIT License
  */
 class Generator
 {
@@ -86,7 +96,7 @@ class Generator
         }
         
         if ($autoGenerate) {
-            $this->data['password'] = $this->generate();
+            $this->generate();
         }
     }
     
@@ -100,6 +110,8 @@ class Generator
     {
         if (array_key_exists($name, $this->data)) {
             return $this->data[$name];
+        } else if (array_key_exists($name, $this->defaults)) {
+            return $this->defaults[$name];
         }
     }
     
@@ -137,14 +149,14 @@ class Generator
         $pattern = str_shuffle($pattern);
         $max = strlen($pattern) - 1;
         $counter = $this->defaults['length'];
-        $password = '';
+        $this->data['password'] = '';
         
         while ($counter > 0) {
-            $password .= $pattern[mt_rand(0, $max)];
+            $this->data['password'] .= $pattern[mt_rand(0, $max)];
             $counter--;
         }
         
-        return $password;
+        return $this->data['password'];
     }
 }
 
