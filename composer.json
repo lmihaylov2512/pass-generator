@@ -1,6 +1,6 @@
 {
     "name": "lmihaylov/pass-generator",
-    "description": "Simple and elegant password generator for either browser and console environments",
+    "description": "A simple and elegant password generator for either browser and console environments.",
     "authors": [
         {
             "name": "Lachezar Mihaylov",
