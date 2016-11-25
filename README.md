@@ -15,7 +15,10 @@ Documentation
 
 Author
 ----------------------
+Lachezar Mihaylov
+E-mail: [me@lacho-portfolio.com](me@lacho-portfolio.com)
 
+----------------------
 
 License
 ----------------------
