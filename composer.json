@@ -1,0 +1,19 @@
+{
+    "name": "vendor/pass-generator",
+    "description": "Description of project Pass-generator.",
+    "authors": [
+        {
+            "name": "Lachezar Mihaylov",
+            "email": "your@email.here"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PassGenerator\\": "src/"
+        }
+    }
+}
