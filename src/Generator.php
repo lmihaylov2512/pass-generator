@@ -64,9 +64,13 @@ class Generator
      * @param bool $autoGenerate whether generate password after initialization
      * @return void
      */
-    public function __construct(array $config = [], int $minLength = self::DEFAULT_MIN_LENGTH, int $maxLength = self::DEFAULT_MAX_LENGTH, bool $autoGenerate = true)
+    public function __construct(array $config = [], int $minLength = 0, int $maxLength = 0, bool $autoGenerate = true)
     {
         global $argv;
+        
+        //sanitize passed arguments
+        $minLength = $minLength == 0 ? self::DEFAULT_MIN_LENGTH : $minLength;
+        $maxLength = $maxLength == 0 ? self::DEFAULT_MAX_LENGTH : $maxLength;
         
         //detect environment
         $this->detector = new Detector();
