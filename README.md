@@ -20,8 +20,8 @@ Demo
 ----------------------
 All demos (for console and browsers) are located in "demo" directory. The examples for each of them are following:
 
- - [Web browser demo](#)
- - [Console demo](#)
+ - [Web browser demo](demo/browser/demo_browser.php)
+ - [Console demo](demo/console/demo_cli.php)
 
 ----------------------
 
