@@ -1,7 +1,7 @@
 {
     "name": "lmihaylov/pass-generator",
     "description": "A simple and elegant PHP password generator for either browser and console environments.",
-    "keywords": ["password generator", "php password generator", "password", "generator", "simple and elegant password generator"],
+    "keywords": ["passgenerator", "pass-generator", "password generator", "php password generator", "password", "generator", "simple and elegant password generator"],
     "authors": [
         {
             "name": "Lachezar Mihaylov",
@@ -9,6 +9,9 @@
         }
     ],
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/lmihaylov2512/pass-generator/issues"
+    },
     "require": {
         "php": ">=7.0.0"
     },
