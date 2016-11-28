@@ -1,6 +1,7 @@
 {
     "name": "lmihaylov/pass-generator",
-    "description": "A simple and elegant password generator for either browser and console environments.",
+    "description": "A simple and elegant PHP password generator for either browser and console environments.",
+    "keywords": ["password generator", "php password generator", "password", "generator", "simple and elegant password generator"],
     "authors": [
         {
             "name": "Lachezar Mihaylov",

@@ -1,7 +1,7 @@
 {
   "name": "pass-generator",
   "version": "1.0.0",
-  "description": "A simple and elegant password generator for either browser and console environments.",
+  "description": "A simple and elegant PHP password generator for either browser and console environments.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,19 +10,7 @@
     "type": "git",
     "url": "git+https://lmihaylov2512@github.com/lmihaylov2512/pass-generator.git"
   },
-  "keywords": [
-    "php",
-    "password",
-    "generator",
-    "php",
-    "password",
-    "generator",
-    "password",
-    "generator",
-    "simple",
-    "password",
-    "generator"
-  ],
+  "keywords": ["password generator", "php password generator", "password", "generator", "simple and elegant password generator"],
   "author": "Lachezar Mihaylov me@lacho-portfolio.com",
   "license": "MIT",
   "bugs": {

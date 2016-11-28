@@ -1,24 +1,12 @@
 {
   "name": "pass-generator",
-  "description": "A simple and elegant password generator for either browser and console environments.",
+  "description": "A simple and elegant PHP password generator for either browser and console environments.",
   "main": "index.js",
   "authors": [
     "Lachezar Mihaylov me@lacho-portfolio.com"
   ],
   "license": "MIT",
-  "keywords": [
-    "php",
-    "password",
-    "generator",
-    "php",
-    "password",
-    "generator",
-    "password",
-    "generator",
-    "simple",
-    "password",
-    "generator"
-  ],
+  "keywords": ["password generator", "php password generator", "password", "generator", "simple and elegant password generator"],
   "homepage": "https://github.com/lmihaylov2512/pass-generator",
   "private": true,
   "ignore": [
