@@ -1,5 +1,7 @@
 <?php
 
+namespace demo\browser;
+
 //import composer autoload file
 require_once dirname(__DIR__) . implode(DIRECTORY_SEPARATOR, ['.', '..', 'vendor', 'autoload.php']);
 

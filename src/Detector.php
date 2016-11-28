@@ -26,8 +26,6 @@ class Detector
     
     /**
      * Initialize current environment and set some useful data.
-     * 
-     * @return void
      */
     public function __construct()
     {

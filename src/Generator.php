@@ -72,7 +72,6 @@ class Generator
      * @param integer $minLength custom password minimum length
      * @param integer $maxLength custom password maximum length
      * @param boolean $autoGenerate whether generate password after initialization
-     * @return void
      */
     public function __construct(array $config = [], int $minLength = self::DEFAULT_MIN_LENGTH, int $maxLength = self::DEFAULT_MAX_LENGTH, bool $autoGenerate = true)
     {
