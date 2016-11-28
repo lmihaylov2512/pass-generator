@@ -6,6 +6,6 @@ php:
 before_script:
     - composer install
     - npm install
-    - npm isntall -g bower
+    - npm install -g bower
 
 script: grunt build
