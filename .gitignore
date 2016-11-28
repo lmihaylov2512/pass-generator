@@ -35,5 +35,5 @@ phpunit.phar
 # bower components dir
 /bower_components
 
-# 
+# browser demo assets dir
 /demo/browser/assets

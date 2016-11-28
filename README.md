@@ -1,4 +1,4 @@
-PHP Password Generator
+Simple and elegant PHP password generator
 ======================
 
 Useful tool for generating password which can be running in either browser and console environments. It can be customize in each aspects: symbols types, length, allowed minimum and maximum sizes and patterns for characters group.
@@ -28,7 +28,7 @@ All demos (for console and browsers) are located in "demo" directory. The exampl
 Documentation
 ----------------------
 
-The packages consumers can modify all kind of configuration options. They may customize password length plus minimum and maximum sizes.
+The package's consumers can modify all kind of configuration options. They may customize password length plus minimum and maximum sizes.
 The available configuration options are:
 
  - upperCase: use alphabet upper letters [A-Z]

@@ -3,7 +3,7 @@
 namespace PassGenerator;
 
 /**
- * Generate random password string according to specific configuration.
+ * Generate random password string according to specific configurations.
  * It can customize password length and minimum and maximum sizes.
  * The allowed configuration options are:
  *  - upperCase: all alphabet upper letters [A-Z]
@@ -69,9 +69,9 @@ class Generator
      * 
      * @global array $argv passed console arguments
      * @param array $config configurations array
-     * @param int $minLength custom password minimum length
-     * @param int $maxLength custom password maximum length
-     * @param bool $autoGenerate whether generate password after initialization
+     * @param integer $minLength custom password minimum length
+     * @param integer $maxLength custom password maximum length
+     * @param boolean $autoGenerate whether generate password after initialization
      * @return void
      */
     public function __construct(array $config = [], int $minLength = self::DEFAULT_MIN_LENGTH, int $maxLength = self::DEFAULT_MAX_LENGTH, bool $autoGenerate = true)
@@ -101,7 +101,7 @@ class Generator
     }
     
     /**
-     * Get storage value according passed key.
+     * Get storage value or option according passed key.
      * 
      * @param string $name specific storage key
      * @return mixed the response value
@@ -150,6 +150,10 @@ class Generator
         $max = strlen($pattern) - 1;
         $counter = $this->defaults['length'];
         $this->data['password'] = '';
+        
+        if ($max < 0) {
+            return $this->data['password'];
+        }
         
         while ($counter > 0) {
             $this->data['password'] .= $pattern[mt_rand(0, $max)];

@@ -11,7 +11,7 @@ namespace PassGenerator;
 class Storage
 {
     /**
-     * @var array list with all allowed characters and their type (type key => characters string)
+     * @var array list with all allowed characters and their type (type key => characters string pairs)
      */
     protected static $characters = [
         'upperCase' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',

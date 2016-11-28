@@ -12,7 +12,12 @@ use PassGenerator\Generator;
 class App
 {
     /**
-     * @var array all options with title and description
+     * @var integer whether the app is in debug mode
+     */
+    const DEBUG_MODE = 0;
+    
+    /**
+     * @var array options with title and description
      */
     protected static $options = [
         'upperCase' => [
@@ -124,7 +129,7 @@ App::run();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Demo password generator</title>
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/bootstrap/css/<?= App::DEBUG_MODE ? 'bootstrap.css' : 'bootstrap.min.css' ?>" rel="stylesheet" />
     <style>.margin-top-20{margin-top:20px}.loader{border:4px solid #eee;border-top:4px solid #337ab7;border-radius:50%;width:32px;height:32px;animation:spin 2s linear infinite;display:inline-block;vertical-align:middle}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
 </head>
 <body>
@@ -165,7 +170,7 @@ App::run();
             </div>
         </div>
     </div>
-    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/jquery/<?= App::DEBUG_MODE ? 'jquery.js' : 'jquery.min.js' ?>"></script>
     <script>
         (function (w, d, $) {
             //attach click event handler on list elements
@@ -189,12 +194,12 @@ App::run();
                 $('.list-group-item').each(function () {
                     data[$(this).data('option')] = $(this).hasClass('active') ? '1' : '';
                 });
-
+                
                 $.ajax({
                     type: 'POST',
                     data: data,
                     success: function (res) {
-                        $('#password-output').text(res);
+                        $('#password-output').html(res === '' ? 'Please choose the at least one or more symbols types' : res);
                     }
                 });
             });

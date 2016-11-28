@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
     
+    //initialize tasks configurations
     grunt.initConfig({
         exec: {
             install_bower: {
@@ -19,18 +20,19 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'bower_components/bootstrap/dist/',
-                    src: ['**'],
+                    src: '**',
                     dest: 'demo/browser/assets/bootstrap'
                 }]
             }
         }
     });
     
+    //register npm tasks
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-copy');
     
+    //register tasks aliases
     grunt.registerTask('build', ['exec', 'copy']);
-    
     grunt.registerTask('default', ['build']);
     
 };
