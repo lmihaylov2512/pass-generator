@@ -1,7 +1,7 @@
 Simple and elegant PHP password generator
 ======================
 
-[![Build Status](https://travis-ci.org/lmihaylov2512/pass-generator.svg?branch=master)](https://travis-ci.org/lmihaylov2512/pass-generator)
+[![Build Status](https://travis-ci.org/lmihaylov2512/pass-generator.svg?branch=master)](https://travis-ci.org/lmihaylov2512/pass-generator) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lmihaylov2512/pass-generator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lmihaylov2512/pass-generator/?branch=master)
 
 Useful tool for generating password which can be running in either browser and console environments. It can be customize in each aspects: symbols types, length, allowed minimum and maximum sizes and patterns for characters group.
 
