@@ -67,21 +67,15 @@ class Generator
     /**
      * Detect environment, apply passed configuration and generate a password, if auto generating is turn on.
      * 
-     * @global array $argv passed console arguments
      * @param array $config configurations array
      * @param integer $minLength custom password minimum length
      * @param integer $maxLength custom password maximum length
      * @param boolean $autoGenerate whether generate password after initialization
      */
     public function __construct(array $config = [], int $minLength = self::DEFAULT_MIN_LENGTH, int $maxLength = self::DEFAULT_MAX_LENGTH, bool $autoGenerate = true)
-    {
-        global $argv;
-        
+    {   
         //detect environment
         $this->detector = new Detector();
-        if ($this->detector->env === 'cli' && count($config) === 0) {
-            $config = $argv;
-        }
         
         //apply passed configurations
         foreach ($config as $key => $val) {

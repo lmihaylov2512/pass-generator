@@ -107,7 +107,7 @@ class App
     /**
      * If is ajax request and post exists, generate password and cancel script execution.
      * 
-     * @return void
+     * @return string|null if is ajax request, returns the generated password
      */
     public static function run()
     {
@@ -116,13 +116,15 @@ class App
                 static::getGenerator()->$option = $value;
             }
             
-            die(static::getGenerator()->generate());
+            return static::getGenerator()->generate();
         }
     }
 }
 
 //run the app
-App::run();
+if (($password = App::run()) !== null) {
+    die($password);
+}
 
 ?>
 <!DOCTYPE html>
