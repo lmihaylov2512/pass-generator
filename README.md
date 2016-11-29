@@ -22,7 +22,7 @@ Demo
 ----------------------
 All demos (for console and browsers) are located in "demo" directory. The examples for each of them are following:
 
- - [Web browser demo](demo/browser/demo_browser.php)
+ - [Web browser demo](http://pass-generator.lmihaylov.com)
  - [Console demo](demo/console/demo_cli.php)
 
 ----------------------
