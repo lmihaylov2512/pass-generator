@@ -50,7 +50,7 @@ It is allowed to change the characters pattern for specific group type (upperCas
 Author
 ----------------------
 Lachezar Mihaylov
-E-mail: [me@lacho-portfolio.com](me@lacho-portfolio.com)
+E-mail: [me@lacho-portfolio.com](mailto:me@lacho-portfolio.com)
 
 ----------------------
 
